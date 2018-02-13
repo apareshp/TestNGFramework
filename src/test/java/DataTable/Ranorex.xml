@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ranorex>
+    <field id="1">
+        <name>FirstName</name>
+        <value>Arunava</value>
+    </field>
+    <field id="2">
+        <name>LastName</name>
+        <value>Chatterjee</value>
+    </field>
+    <field id="3">
+        <name>Category</name>
+        <value>Sport</value>
+    </field>
+    <field id="4">
+        <name>Gender</name>
+        <value>Male</value>
+    </field>
+</Ranorex>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Landed in Ranorex page]]>
+    </line>
+    <line>
+      <![CDATA[Enter text:: Arunava in the textbox:: First Name]]>
+    </line>
+    <line>
+      <![CDATA[Enter text:: Chatterjee in the textbox:: Last Name]]>
+    </line>
+    <line>
+      <![CDATA[Click on the button:: Gender]]>
+    </line>
+    <line>
+      <![CDATA[Select optionSport from the dropdown list:: Category]]>
+    </line>
+    <line>
+      <![CDATA[Click on the button:: Add button]]>
+    </line>
+    <line>
+      <![CDATA[<b>VALIDATE REGISTRATION DATA IN TABLE</b>]]>
+    </line>
+    <line>
+      <![CDATA[Value for the field:: Category is correctly reflected as:: Sport]]>
+    </line>
+    <line>
+      <![CDATA[Value for the field:: First Name is correctly reflected as:: Arunava]]>
+    </line>
+    <line>
+      <![CDATA[Value for the field:: Gender is correctly reflected as:: Male]]>
+    </line>
+    <line>
+      <![CDATA[Value for the field:: Last Name is correctly reflected as:: Chatterjee]]>
+    </line>
+    <line>
+      <![CDATA[<b>VERIFY UI</b>]]>
+    </line>
+    <line>
+      <![CDATA[WEB Element: Add button is displayed]]>
+    </line>
+    <line>
+      <![CDATA[WEB Element: Category is displayed]]>
+    </line>
+    <line>
+      <![CDATA[WEB Element: First Name is displayed]]>
+    </line>
+    <line>
+      <![CDATA[WEB Element: Gender is displayed]]>
+    </line>
+    <line>
+      <![CDATA[WEB Element: Last Name is displayed]]>
+    </line>
+  </reporter-output>
+  <suite name="TestNG" duration-ms="43076" started-at="2018-02-09T12:38:04Z" finished-at="2018-02-09T12:38:47Z">
+    <groups>
+    </groups>
+    <test name="Registration" duration-ms="43076" started-at="2018-02-09T12:38:04Z" finished-at="2018-02-09T12:38:47Z">
+      <class name="BusinessComponent.Ranorex">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:BusinessComponent.Ranorex@f425231]" name="beforeMethod" is-config="true" duration-ms="26420" started-at="2018-02-09T18:08:04Z" finished-at="2018-02-09T18:08:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="registrationRanorex()[pri:0, instance:BusinessComponent.Ranorex@f425231]" name="registrationRanorex" duration-ms="3152" started-at="2018-02-09T18:08:31Z" finished-at="2018-02-09T18:08:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Landed in Ranorex page]]>
+            </line>
+            <line>
+              <![CDATA[Enter text:: Arunava in the textbox:: First Name]]>
+            </line>
+            <line>
+              <![CDATA[Enter text:: Chatterjee in the textbox:: Last Name]]>
+            </line>
+            <line>
+              <![CDATA[Click on the button:: Gender]]>
+            </line>
+            <line>
+              <![CDATA[Select optionSport from the dropdown list:: Category]]>
+            </line>
+            <line>
+              <![CDATA[Click on the button:: Add button]]>
+            </line>
+            <line>
+              <![CDATA[<b>VALIDATE REGISTRATION DATA IN TABLE</b>]]>
+            </line>
+            <line>
+              <![CDATA[Value for the field:: Category is correctly reflected as:: Sport]]>
+            </line>
+            <line>
+              <![CDATA[Value for the field:: First Name is correctly reflected as:: Arunava]]>
+            </line>
+            <line>
+              <![CDATA[Value for the field:: Gender is correctly reflected as:: Male]]>
+            </line>
+            <line>
+              <![CDATA[Value for the field:: Last Name is correctly reflected as:: Chatterjee]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- registrationRanorex -->
+        <test-method status="PASS" signature="cleanUP()[pri:0, instance:BusinessComponent.Ranorex@f425231]" name="cleanUP" is-config="true" duration-ms="1003" started-at="2018-02-09T18:08:34Z" finished-at="2018-02-09T18:08:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUP -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:BusinessComponent.Ranorex@f425231]" name="beforeMethod" is-config="true" duration-ms="10287" started-at="2018-02-09T18:08:35Z" finished-at="2018-02-09T18:08:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyUI()[pri:0, instance:BusinessComponent.Ranorex@f425231]" name="verifyUI" duration-ms="1185" started-at="2018-02-09T18:08:45Z" finished-at="2018-02-09T18:08:46Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<b>VERIFY UI</b>]]>
+            </line>
+            <line>
+              <![CDATA[WEB Element: Add button is displayed]]>
+            </line>
+            <line>
+              <![CDATA[WEB Element: Category is displayed]]>
+            </line>
+            <line>
+              <![CDATA[WEB Element: First Name is displayed]]>
+            </line>
+            <line>
+              <![CDATA[WEB Element: Gender is displayed]]>
+            </line>
+            <line>
+              <![CDATA[WEB Element: Last Name is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyUI -->
+        <test-method status="PASS" signature="cleanUP()[pri:0, instance:BusinessComponent.Ranorex@f425231]" name="cleanUP" is-config="true" duration-ms="995" started-at="2018-02-09T18:08:46Z" finished-at="2018-02-09T18:08:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUP -->
+        <test-method status="PASS" signature="mail()[pri:0, instance:BusinessComponent.Ranorex@f425231]" name="mail" is-config="true" duration-ms="1393" started-at="2018-02-09T18:08:47Z" finished-at="2018-02-09T18:08:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mail -->
+      </class> <!-- BusinessComponent.Ranorex -->
+    </test> <!-- Registration -->
+  </suite> <!-- TestNG -->
+</testng-results>
