@@ -106,39 +106,50 @@ protected int impTime = Integer.parseInt(readProp("waitTime"));
 	
 	public WebDriver initiateBrowser(String browser)
 	{
-		  if(browser.equalsIgnoreCase("Firefox"))
-		  {
-			  System.setProperty("webdriver.gecko.driver",sParLoc+"/BrowserDriversEXE/geckodriver.exe");
-				driver = new FirefoxDriver();
-			  	String URL= readProp("URL");	
-				driver.get(URL);
-				driver.manage().window().maximize();
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		  }
-		  else if(browser.equalsIgnoreCase("chrome"))
-		  {
-			  System.setProperty("webdriver.chrome.driver",sParLoc+"\\BrowserDriversEXE\\chromedriver.exe");
-	          driver = new ChromeDriver();
-			  	String URL= readProp("URL");	
-				driver.get(URL);
-				driver.manage().window().maximize();
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		  }
-		  else if(browser.equalsIgnoreCase("IE"))
-		  {
-			  System.setProperty("webdriver.ie.driver",sParLoc+"\\BrowserDriversEXE\\IEDriverServer.exe");
-	          driver = new InternetExplorerDriver();
-			  	String URL= readProp("URL");	
-				driver.get(URL);
-				driver.manage().window().maximize();
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		  }
-		  else
-		  {
-			  System.out.println("Invalid browser");
-		  }
-		  
-		  return driver;
+		try
+		{
+
+			  if(browser.equalsIgnoreCase("Firefox"))
+			  {
+				  System.setProperty("webdriver.gecko.driver",sParLoc+"/BrowserDriversEXE/geckodriver.exe");
+					driver = new FirefoxDriver();
+				  	String URL= readProp("URL");	
+					driver.get(URL);
+					driver.manage().window().maximize();
+					driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			  }
+			  else if(browser.equalsIgnoreCase("chrome"))
+			  {
+				  System.setProperty("webdriver.chrome.driver",sParLoc+"\\BrowserDriversEXE\\chromedriver.exe");
+		          driver = new ChromeDriver();
+				  	String URL= readProp("URL");	
+					driver.get(URL);
+					driver.manage().window().maximize();
+					driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			  }
+			  else if(browser.equalsIgnoreCase("IE"))
+			  {
+				  System.setProperty("webdriver.ie.driver",sParLoc+"\\BrowserDriversEXE\\IEDriverServer.exe");
+		          driver = new InternetExplorerDriver();
+				  	String URL= readProp("URL");	
+					driver.get(URL);
+					driver.manage().window().maximize();
+					driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			  }
+			  else
+			  {
+				  System.out.println("Invalid browser");
+			  }
+			  
+			 
+		
+		}
+		catch(Exception e)
+		{
+			Assert.assertTrue(false);
+		}
+		
+		 return driver;
 	}
 	
 	public void logClick(WebDriver driver, By by, String name)
