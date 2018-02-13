@@ -38,6 +38,7 @@ public class Ranorex extends ReusableLibrary{
 			//{
 
 				this.pageSync(driver);
+				System.out.println("second commit");
 				if(isUIObjectReady(driver, RanorexOBJ.logoImage(), impTime))
 				{				
 					Reporter.log("Landed in Ranorex page");
