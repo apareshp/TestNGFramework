@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="TestNG" thread-count="2" parallel="tests">
   <test name="Registration">
-  <parameter name="browser" value="Chrome" />
+  <parameter name="browser" value="Firefox" />
     <classes>
        <class name="BusinessComponent.Ranorex" />
     </classes>
