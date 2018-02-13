@@ -111,7 +111,7 @@ protected int impTime = Integer.parseInt(readProp("waitTime"));
 
 			  if(browser.equalsIgnoreCase("Firefox"))
 			  {
-				  //System.setProperty("webdriver.gecko.driver",sParLoc+"/BrowserDriversEXE/geckodriver.exe");
+				  	System.setProperty("webdriver.gecko.driver",sParLoc+"/BrowserDriversEXE/geckodriver.exe");
 					driver = new FirefoxDriver();
 				  	String URL= readProp("URL");	
 					driver.get(URL);
