@@ -103,6 +103,7 @@ public class Ranorex extends ReusableLibrary{
 		}
 		catch(Exception e)
 		{
+			Assert.assertTrue(false);
 			Reporter.log("ISSUE with REGISTRATION: "+e.getMessage());
 		}
 	}
@@ -153,6 +154,7 @@ public class Ranorex extends ReusableLibrary{
 		}
 		catch(Exception e)
 		{
+			Assert.assertTrue(false);
 			Reporter.log("ISSUE with UI LEVEL VALIDATION: "+e.getMessage());
 		}
 	}
